@@ -1,13 +1,130 @@
-\documentclass{article}
+\documentclass[11pt,letterpaper,twoside]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[left=2.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\graphicspath{{img/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+
+
+\author{Dr. Said Polanco Martagón}
+\title{Reporte Análisis Situacional del Trabajo - Posgrado Interinstitucional en Ciencias en Cómputo Biomédico }
+\date{\today}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
 \begin{document}
-Hola mundo
-
-\section{un nuevo comienzo}
-
-esto es grancioso
-
-\subsection{en definitivo}
-
-claso que si
+	
+	\begin{titlepage}
+		\centering
+		\vspace*{0.5 cm}
+		\includegraphics[scale = 0.5]{logo_UPV.png}\\[1.0 cm]
+		\textsc{\LARGE Universidad Politécnica de Victoria}\\[2.0 cm]  % University Name
+		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+		{ \huge \bfseries \thetitle}\\
+		\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+		
+		\begin{minipage}{0.3\textwidth}
+			\begin{center} \large
+				Said Polanco Martagón\\
+				Profesor-Investigador\\
+				Ingeniería en Tecnologías de la Información\\
+			\end{center}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\begin{center} \large
+				Heidy M. Marin Castro\\
+				Profesor-Investigador\\
+				Ingeniería en Tecnologías de la Información\\
+			\end{center}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			
+			\begin{center} \large
+				Marco A. Nuño Maganda
+				Profesor-Investigador\\
+				Ingeniería en Tecnologías de la Información\\
+			\end{center}
+			
+		\end{minipage}\\[2 cm]
+		
+	\end{titlepage}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\tableofcontents
+	\pagebreak
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Equipo de producción}
+	
+	\textbf{Dirección:}\\
+	Mtra. Sonia Maricela Sánchez Moreno\\
+	Rectora\\
+	Universidad Politécnica de Victoria	\\[0.3 cm]
+	
+	\textbf{Animador:}\\
+	M.C. Dante Inván González Sánchez\\
+	Directori del Programa de Ingeniería en Tecnologías de la Información\\
+	Universidad Politécnica de Victoria \\[0.3 cm]
+	
+	\textbf{Coordinador General:}\\
+	Dr. Enrique Rocha Rangel\\
+	Secretario Académico\\
+	Universidad Politécnica de Victoria\\[0.3 cm]
+	
+	\section*{Representantes del Sector Productivo}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\pagebreak
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Observadores, Universidad Politécnica de Victoria}
+	
+	  Dra. Heidy Marisol Marin Castro\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  Dr. Hector Hugo Avilés Arriaga\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  Dr. Yair Hernández Mier\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  Dr. Marco Aurelio Nuño Maganda\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  M. A. T. Hiram Herrera Rivas\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  M.S.C. Jorge Arturo Hernández Almazán\\
+	  Profesor - Investigador\\[0.3 cm]
+	  
+	  M.C. Carlos Orozco García\\
+	  Director del Programa Académico de Ingeniería en Mecatrónica
+	  
+	  	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	  	
+	  	\pagebreak
+	  	
+	  	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	  	
+	  	\input{introduccion}
 \end{document}
